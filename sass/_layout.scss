@@ -1,0 +1,66 @@
+.container {
+    max-width: 140rem;
+    margin-top: 6rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-dark);
+   
+    min-height: 50rem;
+}
+
+.header {
+    height: 15rem;
+    background-color: #fff;
+    border-bottom: #fff;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topnavigation {
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 18%;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1rem solid var(--color-primary-dark);
+    
+
+}
+
+.products {
+    background-color: #fff;
+    background-color: grey;
+    height: 80rem; 
+
+    flex: 1;
+}
+
+.head {
+    
+    float: left;
+    &__logo {
+        height: 100%;
+        
+        width:11vw;
+    }
+
+    &__banner{
+        height: 100%;
+        width : 50vw;
+        //overflow: hidden;
+        
+        
+    }
+}
