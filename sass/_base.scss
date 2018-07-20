@@ -15,6 +15,34 @@
     --line: 1px solid var(--color-grey-light-2);
 }
 
+//OTHER VARIABLES
+
+$grid-width: 115rem;
+$gutter-vertical: 2rem;
+$gutter-vertical-small: 2rem;
+$gutter-horizontal: 2rem;
+// COLORS
+$color-primary: #66d9ff;
+$color-primary-light: #ccf2ff;
+$color-primary-dark: #1ac6ff;
+
+
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// FONT
+$default-font-size: 1.6rem;
+
+
 *,
 *::after,
 *::before {

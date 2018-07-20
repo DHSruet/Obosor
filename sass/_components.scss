@@ -1,12 +1,12 @@
 .side-nav {
-    font-size: 2rem;
+    font-size: 2.2rem;
     list-style: none;
     margin-top: 3.5rem;
     
 
     &__item {
         position: relative;
-    
+        
 
         &:not(:last-child){
             margin-bottom: .5rem;
@@ -37,6 +37,10 @@
        
     }
 
+    &__item-prio {
+      background-color: var(--color-primary-dark);
+    }
+
 
     &__link:link,
     &__link:visited {
@@ -44,7 +48,7 @@
         text-decoration: none;
         text-transform: uppercase;
         display :block;
-        padding: 1.5rem 6rem;
+        padding: 1.5rem 4rem;
         position: relative;
         z-index: 10;
 
@@ -111,7 +115,78 @@
 
 
 
+/* Style the sidenav links and the dropdown button */
+.side-nav a, .dropdown-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  padding: 1.5rem 4rem;
+  position: relative;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 
+/* On mouse-over */
+.side-nav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.dropdown-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--color-primary);
+  transform: scaleY(0);
+  z-index: -20;      
+  transition: transform .2s,
+              width .4s cubic-bezier(1,0,0,1) .2s ;
+}
+
+.dropdown-btn:hover::before{
+  transform: scaleY(1);
+  width: 100%;
+}
+
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+  
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 
 

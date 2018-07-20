@@ -14,6 +14,8 @@
     <!--<link rel="stylesheet" href="css/icon-font.css">-->
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
     <title>OBOSOR | Pay less Read more</title>
@@ -21,12 +23,18 @@
 
 <body>
     <div class="container">
+
+        <!-- HEADER SECTION CONTAINING THE BANNER AND LOGO -->
+
         <header class="header">
             <img src="img/web1.jpg" class="head__logo" alt="logo">
             <img src="img/web2.jpg" class="head__banner" alt="banner">
 
 
         </header>
+
+        <!-- TOP NAVIGATION -->
+
         <div class="topnavigation">
             <a href="#" class="top-nav__link">
                 <span>
@@ -54,43 +62,38 @@
                 </span>
             </a>
             <form action="#" class="top-nav__input">
-                    <input type="text" name="search" id="8">
+                <input type="text" name="search" id="8">
             </form>
-            
+
         </div>
 
-        
 
 
 
-
-
-
-
-
-
-
-
-
-
+        <!-- SIDE NAVIGATION -->
 
         <div class="content">
             <nav class="sidebar">
                 <ul class="side-nav">
-                    <li class="side-nav__item">
+
+                    <li class="side-nav__item side-nav__item-prio">
                         <a href="#" class="side-nav__link">
                             <span>
                                 Academic
                             </span>
                         </a>
                     </li>
-                    <li class="side-nav__item">
-                        <a href="#" class="side-nav__link">
-                            <span>
-                                Enginnering
-                            </span>
-                        </a>
-                    </li>
+
+                    <button class="dropdown-btn side-nav__link">
+                        <span> Engineering</span>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">CSE</a>
+                        <a href="#">EEE</a>
+                        <a href="#">Mechanical</a>
+                    </div>
+
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
                             <span>
@@ -98,6 +101,7 @@
                             </span>
                         </a>
                     </li>
+
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
                             <span>
@@ -105,6 +109,7 @@
                             </span>
                         </a>
                     </li>
+
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
                             <span>
@@ -112,6 +117,7 @@
                             </span>
                         </a>
                     </li>
+
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
                             <span>
@@ -119,6 +125,7 @@
                             </span>
                         </a>
                     </li>
+
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
                             <span>
@@ -126,13 +133,15 @@
                             </span>
                         </a>
                     </li>
-                    <li class="side-nav__item">
+
+                    <li class="side-nav__item side-nav__item-prio">
                         <a href="#" class="side-nav__link">
                             <span>
                                 Non-Academic
                             </span>
                         </a>
                     </li>
+
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
                             <span>
@@ -140,6 +149,7 @@
                             </span>
                         </a>
                     </li>
+
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
                             <span>
@@ -147,6 +157,7 @@
                             </span>
                         </a>
                     </li>
+
                     <li class="side-nav__item">
                         <a href="#" class="side-nav__link">
                             <span>
@@ -155,16 +166,147 @@
                         </a>
                     </li>
 
-
                 </ul>
             </nav>
+
             <main class="products">
 
+                <div class="row">
+
+
+                    <div class="col-1-of-4">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                                
+                                <div class="card__details">
+                                    The Thristy crow<br>
+                                    Esope
+                                </div>
+
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">$497</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Add to Cart!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-1-of-4">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                                
+                                <div class="card__details">
+                                    Out of the box<br>Shopnil    
+                                </div>
+
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">$497</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Add to Cart!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--3">
+                                    &nbsp;
+                                </div>
+                                
+                                <div class="card__details">
+                                    How to be the perfect DUTCH<br>
+                                    Hanjala
+                                </div>
+
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">$497</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Add to Cart!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--4">
+                                    &nbsp;
+                                </div>
+                                
+                                <div class="card__details">
+                                    Stephen king<br>Shefin
+                                </div>
+
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">$497</p>
+                                    </div>
+                                    <a href="#popup" class="btn btn--white">Add to Cart!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+
+                </div>
 
             </main>
 
+            <!-- JS -->
+
+            <script>
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+
+                for (i = 0; i < dropdown.length; i++) {
+                    dropdown[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var dropdownContent = this.nextElementSibling;
+                        if (dropdownContent.style.display === "block") {
+                            dropdownContent.style.display = "none";
+                        } else {
+                            dropdownContent.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+
         </div>
+
+
+
+
     </div>
+
 </body>
 
 
